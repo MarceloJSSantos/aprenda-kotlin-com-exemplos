@@ -43,8 +43,6 @@ fun main() {
   var resultado = 0
     
     for (i in numeroRomano!!.indices) {
-        // Checking that current element
-        // is not smaller then previous
         if (i > 0 && numerosRomanos.getValue(numeroRomano[i]) > numerosRomanos.getValue(numeroRomano[i - 1])) {
             resultado += numerosRomanos.getValue(numeroRomano[i]) - 2 * numerosRomanos.getValue(numeroRomano[i - 1]);
         } else {
